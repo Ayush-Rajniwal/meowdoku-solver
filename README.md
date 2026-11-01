@@ -26,7 +26,7 @@ Local image processing and OCR. No API keys or LLM calls during play.
 
 It finds the grid, reads colors and existing cats, proves a unique solution, and sends the double-taps. Then it follows recognized completion screens and watches for the next puzzle. Existing crosses are treated as notes.
 
-> **Experimental, unofficial Meowdoku project.** Tested on one Android phone; different layouts, themes, and devices may need adjustments. It captures the whole phone display, so keep the game visible and stop the controller before private activity.
+> **Experimental, unofficial Meowdoku project.** Not affiliated with or endorsed by Oakever Games. See the [disclaimer](#disclaimer). Tested on one Android phone; different layouts, themes, and devices may need adjustments. It captures the whole phone display, so keep the game visible and stop the controller before private activity.
 
 ## Get started
 
@@ -166,3 +166,13 @@ npm run format:check
 ```
 
 Tests exercise saved screenshots, generated boards, an independent solver oracle, fake devices, terminal controls, cleanup, and installer fixtures. They do not send input to your phone. See [development](docs/development.md) for individual capture/prepare/execute commands and setup details.
+
+## Disclaimer
+
+Meowdoku Solver is an independent project for learning and personal experimentation. It is not affiliated with, endorsed by, or sponsored by Oakever Games or the owners of Meowdoku.
+
+Meowdoku's name, logos, artwork, characters, and game content belong to their respective rights holders. Game screenshots in this repository illustrate behavior and support regression testing. This project does not grant rights to those third-party assets or distribute the game itself.
+
+Automation may conflict with the game's terms or policies and could result in account or access restrictions. Review the publisher's [Terms of Service](https://oakevergames.com/tos.html) and applicable law, and use automation only where permitted. Users are responsible for how they use this software.
+
+This disclaimer does not provide publisher authorization, override game policies, or establish that a particular use is lawful. The software is experimental; correctness, device compatibility, and uninterrupted operation are not guaranteed.
