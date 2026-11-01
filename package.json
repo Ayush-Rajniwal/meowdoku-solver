@@ -1,0 +1,40 @@
+{
+  "name": "meowdoku-solver",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "solve": "node src/cli/solve.ts",
+    "capture": "node src/cli/capture.ts",
+    "run-level": "node src/cli/run-level.ts",
+    "start": "node --import tsx src/cli/start.ts",
+    "format": "prettier --write src tests docs package.json tsconfig.json README.md",
+    "format:check": "prettier --check src tests docs package.json tsconfig.json README.md",
+    "cleanup": "node src/cli/cleanup.ts",
+    "prepare-level": "node src/cli/prepare.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/pngjs": "^6.0.5",
+    "@types/react": "^19.3.0",
+    "ink-testing-library": "^4.0.0",
+    "prettier": "^3.9.10",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "@inkjs/ui": "^2.0.0",
+    "@tesseract.js-data/eng": "^1.0.0",
+    "commander": "^15.0.0",
+    "ink": "^8.0.0",
+    "pngjs": "^7.0.0",
+    "react": "^19.3.1",
+    "tesseract.js": "^7.0.0",
+    "zod": "^4.6.7"
+  }
+}
